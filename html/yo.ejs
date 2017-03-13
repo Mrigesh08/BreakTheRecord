@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Microsoft Student Partner Summit 2017</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+	<link rel="icon" type="image/png" href="/images/icon.png">
+</head>
+<style type="text/css">
+	#particles-js {
+		background: #000;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -99;
+	}
+
+	h1 {
+		font-family: 'Raleway', sans-serif !important;
+		color: #424242;
+		font-size: 3em !important;
+	}
+
+	h3 {
+		font-family: 'Raleway', sans-serif !important;
+		color: #424242 !important;
+		font-size: 2.2em !important;
+	}
+
+	p {
+		font-family: 'Oxygen', sans-serif;
+		color: #818181;
+	}
+
+	.container {
+		opacity: 0.9;
+	}
+
+	.inside {
+		background-color: white;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.intro-box {
+		height: 100vh;
+		display: table;
+		text-align: center;
+		width: 100%;
+	}
+
+	.intro-box2{
+		height: 400px;
+		display: table;
+		text-align: center;
+		width: 100%;
+	}
+
+	.intro {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.arrow_effect {
+	    position: absolute;
+	    z-index: 4;
+	    left: 49%;
+	    bottom: 30px;
+	    color: white !important;
+	    width: auto;
+	}
+
+	.arrow {
+	    margin: 0 !important;
+	    color: white;
+	    font-size: 2em;
+	}
+
+	@keyframes arrow1 {
+	    0% {
+	        opacity: 1;
+	    }
+	    25% {
+	      opacity: 0.5;
+	    }
+	    33% {
+	        opacity: 0;
+	    }
+	    66% {
+	        opacity: 0;
+	    }
+	    75% {
+	      opacity: 0.5;
+	    }
+	    100% {
+	        opacity: 1;
+	    }
+	}
+
+	@keyframes arrow2 {
+	    0% {
+	        opacity: 0;
+	    }
+	    25% {
+	      opacity: 0.5;
+	    }
+	    33% {
+	        opacity: 1;
+	    }
+	    50% {
+	      opacity: 0.5;
+	    }
+	    66% {
+	        opacity: 0;
+	    }
+	    100% {
+	        opacity: 0;
+	    }
+	}
+
+	@keyframes arrow3 {
+	    0% {
+	        opacity: 0;
+	    }
+	    33% {
+	        opacity: 0;
+	    }
+	    50% {
+	      opacity: 0.5;
+	    }
+	    66% {
+	        opacity: 1;
+	    }
+	    75% {
+	      opacity: 0.5;
+	    }
+	    100% {
+	        opacity: 0;
+	    }
+	}
+
+	.arrow_1 {
+	    animation: arrow1 1000ms infinite;
+	}
+
+	.arrow_2 {
+	    animation: arrow2 1000ms infinite;
+	}
+
+	.arrow_3 {
+	    animation: arrow3 1000ms infinite;
+	}
+
+	@media screen and (max-width:500px){
+	.apogeelogo{
+		height:60px;
+	}
+	
+	.bomb{
+		font-size: 1.2em !important;
+	}
+
+	.mikelogo{
+		width:300px;
+	}
+	.t{
+		font-size: 2em !important;
+	}
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/css/aos.css">
+<link rel="stylesheet" type="text/css" href="/css/master.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
+<script src="https://use.fontawesome.com/bb6b2004d0.js"></script>
+<body style="background-color: cornflowerblue;">
+	<div id="particles-js"></div>
+
+	<nav class="navbar navbar-default" id="navmain" style="position: absolute;z-index: 1000;width: 100%;">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-left">
+				<li class="page2"><a href="#" class="inherit"><img src="/images/a3.png" class="apogeelogo"></a></li>
+				<li class="empty"></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="page page_1"><a href="#home" class="inherit">Home</a></li>
+				<li class="page page_2"><a href="#about" class="inherit">About</a></li>
+				<li class="page page_3"><a href="#speakers" class="inherit">Speakers</a></li>
+				<li class="page page_4"><a href="#events" class="inherit">Events</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" id="home">
+		<div class="row">
+			<div class="overlay">
+				<div class="row-vertical-center">
+					<div class="row2" id="main1">
+						<div class="row row3">
+							<div class="demo">
+								<span class="cortana-loader"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="text text-center">
+								<p class="text-1"><span id='text-value'></span><span class="type"></span></p>
+							</div>
+						</div>
+					</div>
+					<div id="main2">
+						<img src="/images/m3.png" class="mikelogo">
+						<h1 style="font-family: 'Raleway', sans-serif; color: white;" class="t">Student Partner</h1>
+						<h1 style="font-family: 'Raleway', sans-serif; color: white;" class="t">Summit 2017</h1>
+					</div>
+					<div class="arrow_effect text-center">
+				<p class="arrow arrow_1"><span class="fa fa-chevron-down"></span></p>
+				<p class="arrow arrow_2"><span class="fa fa-chevron-down"></span></p>
+				<p class="arrow arrow_3"><span class="fa fa-chevron-down"></span></p>
+			</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<br><br>
+	<div id="about">
+	<div data-aos="fade-up">
+		<div class="container inside">
+			<br><br>
+			<h1>About the summit</h1><br>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<p>Microsoft India Student Partner Summit is an annual gathering of Microsoft student partners of india. This year, it will be hosted by MSPs of  BITS Pilani from 23rsd March to 26th March. With an attendance in hundreds , this incredible conclave is organized alongside ApOGEE, BITS Pilani's technical fest. A gamut of workshops, melange of events and Keynote by microsoft leaderships will consist of this grand technical symposium.</p>	
+				</div>
+			</div>
+				
+			<br><br>
+		</div>
+	</div>
+	</div>
+	<br><br><br><br>
+	<div class="container" id="speakers">
+		<!-- data-aos-duration="1000" -->
+
+		<div class="inside">
+			<div data-aos="flip-left">
+				<br>
+				<h1>Meet the speakers!</h1>
+				<br>
+				<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<p>Keynote speakers from microsoft leadership and evangalists will be joining us and sharing their thoughts. Students will get this amazing chance to pick the mind of the best of the best.</p>	
+					<br><br>
+				</div>
+
+			</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-4 col-sm-offset-2" style="padding: 20px !important;">
+				<div data-aos="fade-up-right">
+					<div class="inside">
+						<br><br>
+						<img src="/images/bh.png" style="width: 80%;">
+						<br><br>
+						<h3>Narendra Bhandari</h3>
+						<p>Country Head</p>
+						<p>DX-Microsoft India</p>
+						<br><br>
+					</div>
+
+				</div>
+			</div>
+			<div data-aos="fade-up-left">
+				<div class="col-sm-4" style="padding: 20px !important;">
+					<div class="inside">
+						<br><br>
+						<img src="/images/ve2.png" style="width: 80%;">
+						<br><br>
+						<h3>Venkatesh Sarvasiddhi</h3>
+						<p>Academic Initiatives Head</p>
+						<p>Microsoft India</p>
+						<br><br>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container inside" id="events">
+	<br><h1> Take a look at the events!</h1><br>
+	<img src="/images/pos.jpg" style="width: 100%;">
+</div>
+<br><br>
+<div class="container inside" style="padding: 0px">
+<div data-aos="fade-up">
+<br>
+	<h1> How to reach us?</h1>
+	<br>
+	<iframe
+  width="100%"
+  height="400"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB4BobNjFx5a7PUAwveAN0wnAxEga7iqrw&q=Birla+Institute+of+Technology+and+Science+Pilani,+Pilani+Campus" allowfullscreen>
+</iframe>
+	<br><br><br>
+	</div>
+</div>
+<br><br>
+	<div class="container inside">
+		<br>
+		<h1> Meet the team!</h1>
+		<br>
+		<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<p>
+				A  dedicated team of 21 MSPs took on this herculean task of organizing this grand summit. Countless sleepless nights, extensive planning and rigorous brainstorming sessions have gone into making it happen. Since then, we've come a long way . Our team consist of: 
+			</p>
+		</div>
+		</div>
+		<br><br>
+		
+		<div class="owl-carousel owl-theme">
+		    <div class="item">
+		    	<img src="/images/team2/bord.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Akshit Bordia</h3>
+				<p>MSP Lead</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/ani.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Anirudh Krishna</h3>
+				<p>Creative Head</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/jain.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Rajat Jain</h3>
+				<p>Batman</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/mri.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Mrigesh Madaan</h3>
+				<p>Technical Lead</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/anshu.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Anshu Aggarwal</h3>
+				<p>Financial Lead</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/anshul.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Anshul Jain</h3>
+				<p></p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/palash.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Palash Dhakar</h3>
+				<p>Publicity Lead</p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/jitvan.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Jitvan Shukla</h3>
+				<p></p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/saurabhr.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Saurabh Raj</h3>
+				<p></p>
+		    </div>
+		    <div class="item">
+		    	<img src="/images/team2/nb.png" style="width: 80%;margin : auto;">
+				<br>
+				<h3 class="bomb">Navjot Bansal</h3>
+				<p></p>
+		    </div>
+		</div>
+		<br><br><br>
+
+
+	</div>
+	<br><br><br><br>
+	<footer class="footer">
+		<div class="container inside">
+			<div class="row">
+				<div class="col-sm-6">
+					<br>
+					<h3 style="font-family: 'Raleway',sans-serif;">
+						Contact us at
+					</h3>
+					<p>akshit.bordia@studentpartner.com</p>
+					<p>+91 9529525596</p>
+				</div>
+				<div class="col-sm-6">
+					<br>
+					<h3 style="font-family: 'Raleway',sans-serif;">
+						Social Media
+					</h3>
+					<a href="https://www.facebook.com/MSPBITSPilani/"><button class="btn btn-info">facebook</button></a>
+				</div>
+			</div>
+			<br><br><br>
+		</div>
+	</footer>
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script src="/js/particles.js"></script>
+
+	<script src="/js/aos.js"></script>
+
+	<script type="text/javascript">
+		particlesJS.load('particles-js', '/js/particlesjs-config.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>
+	<script type="text/javascript">
+		AOS.init();
+	</script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/master.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+		    items:4,
+		    loop:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:2000,
+		    autoplayHoverPause:false
+		});
+	</script>
+</body>
+
+</html>
