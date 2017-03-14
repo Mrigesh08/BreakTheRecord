@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var text1 = "Welcome to Bits Pilani ";
+    var text1 = "Welcome to BITS Pilani ";
     i = 0;
     var scroll_start = 0;
     var offset = 200;
@@ -74,6 +74,12 @@ $(document).ready(function() {
         function() {
             $('html, body').animate({
                 scrollTop: $("#team").offset().top
+            }, 'slow');
+        });
+     $('#arrowscroll').click(
+        function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
             }, 'slow');
         });
 });
